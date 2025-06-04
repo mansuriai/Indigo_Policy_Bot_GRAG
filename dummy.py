@@ -11,7 +11,7 @@ class AuraDBConnection:
         # self.uri = os.getenv("NEO4J_URI", "neo4j+s://graphrag_indigo.databases.neo4j.io")
         self.uri = os.getenv("NEO4J_URI", "neo4j+s://b8524829.databases.neo4j.io")
         self.username = os.getenv("NEO4J_USERNAME", "neo4j")  # Usually "neo4j" for AuraDB
-        self.password = os.getenv("NEO4J_PASSWORD", "PFuMe99J8r3D9n1k9L0L6jHshDo66lNHRPgraBmpzDo")  # Your AuraDB password
+        self.password = os.getenv("NEO4J_PASSWORD", "password")  # Your AuraDB password
         
         if not self.password:
             raise ValueError("NEO4J_PASSWORD environment variable is required for AuraDB")
